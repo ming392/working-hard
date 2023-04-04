@@ -1,9 +1,9 @@
-#ë³€ìˆ˜ ì •ì˜
+#º¯¼ö Á¤ÀÇ
 archive_credit, submit_credit = 0, 0
 archive_gpa, submit_gpa = 0, 0
 
-#ì…ë ¥
+#ÀÔ·Â
 value = False
 while value:
-    print('ì‘ì—…ì„ ì„ íƒí•˜ì„¸ìš”')
+    print('ÀÛ¾÷À» ¼±ÅÃÇÏ¼¼¿ä')
     user_value = input()
