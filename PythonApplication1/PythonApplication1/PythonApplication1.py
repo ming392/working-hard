@@ -26,6 +26,8 @@ def credit(gpa):
         case 'F':
             gpa_sum = 0.0
             
+            
+
 #입력
 while True:
     print('작업을 선택하세요.')
@@ -39,7 +41,8 @@ while True:
         hak_jum = int(score)
         gpa = input('평점을 입력하세요.')
         credit(gpa)
-        archive_credit += hak_jum #archive_credit = archive_credit + hak_jum
+        print(gpa_sum)
+        archive_credit += hak_jum
         archive_gpa += gpa_sum * hak_jum
         
         if gpa_sum != 0.0:
