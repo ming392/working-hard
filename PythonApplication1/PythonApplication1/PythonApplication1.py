@@ -5,26 +5,26 @@ gpa_sum = 0.0
 
 #학점 변환 함수
 def credit(gpa):
-    global gpa_sum
+    
     match gpa:
         case 'A+':
-            gpa_sum = 4.5
+            return 4.5
         case 'A':
-            gpa_sum = 4.0
+            return 4.0
         case 'B+':
-            gpa_sum = 3.5
+            return 3.5
         case 'B':
-            gpa_sum = 3.0
+            return 3.0
         case 'C+':
-            gpa_sum = 2.5
+            return 2.5
         case 'C':
-            gpa_sum = 2.0
+            return 2.0
         case 'D+':
-            gpa_sum = 1.5
+            return 1.5
         case 'D':
-            gpa_sum = 1.0
+            return 1.0
         case 'F':
-            gpa_sum = 0.0
+            return 0.0
             
             
 
@@ -40,7 +40,7 @@ while True:
         score = input('학점을 입력하세요.')
         hak_jum = int(score)
         gpa = input('평점을 입력하세요.')
-        credit(gpa)
+        gpa_sum = credit(gpa)
         print(gpa_sum)
         archive_credit += hak_jum
         archive_gpa += gpa_sum * hak_jum
